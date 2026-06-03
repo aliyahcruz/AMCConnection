@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f5f5;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 560px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #666;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  margin: 4px 0 0;
+  font-size: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #444;
+}
+
+.primaryButton,
+.secondaryButton,
+.option {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.primaryButton {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #111;
+  color: #fff;
+  margin-top: 12px;
+}
+
+.secondaryButton {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.optionGrid {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.option {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ccc;
+  background: white;
+  text-align: left;
+}
+
+.option.selected {
+  border-color: #111;
+  background: #f0f0f0;
+  font-weight: 700;
+}
+
+.message {
+  padding: 12px;
+  background: #f4f4f4;
+  border-radius: 10px;
+}
